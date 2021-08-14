@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Public/estilos/formularios-hojaClinica.css">
+    <title>Modo de vida</title>
+</head>
+
+<body>
+
+
+    <div class="contact-form">
+        <h1>Alimentacion y estilo de vida.</h1>
+
+	    	<form name="datosAlimentacion" id="datosAlimentacion" action="" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+	    		<div class="txtb">
+	            <label for="">De la escala del 1 (Solo consumo comida chatarra) al 10 (Solo consumo comida saludable),
+	                ¿Cómo considera su alimentación? </label>
+	            <input type="number" name="alimentacion" class="hoja-si" />
+	        </div>
+	
+	        <div class="subtituloHojaClinicaRadio">
+	            <label class="subtitulo">Modo de vida</label>
+	
+	            <div class="contRadio">
+	                <div class="conjuntoRadio">
+	                    <label>Activa</label>
+	                    <input type="radio" name="modoVida" class="hoja-si" value="1" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>Sedentaria</label>
+	                    <input type="radio" name="modoVida" class="hoja-si" value="0" />
+	                </div>
+	            </div>
+	        </div>
+	        <div class="subtituloHojaClinicaRadio">
+	            <label class="subtitulo">¿Realiza actividad fisica?</label>
+	            <div class="contRadio">
+	                <div class="conjuntoRadio">
+	                    <label>Si</label>
+	                    <input type="radio" name="actFisica" class="hoja-si" value="1" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>No</label>
+	                    <input type="radio" name="actFisica" class="hoja-si" value="0" />
+	                </div>
+	            </div>
+	        </div>
+	        <div class="subtituloHojaClinicaRadio">
+	            <label class="subtitulo">¿Fuma regularmente?</label>
+	            <div class="contRadio">
+	                <div class="conjuntoRadio">
+	                    <label>Si</label>
+	                    <input type="radio" name="fuma" class="hoja-si" value="1" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>No</label>
+	                    <input type="radio" name="fuma" class="hoja-si" value="0" />
+	                </div>
+	            </div>
+	        </div>
+	        <div class="subtituloHojaClinicaRadio">
+	            <label class="subtitulo">¿Ingiere bebidas alcohólicas regularmente?</label>
+	            <div class="contRadio">
+	                <div class="conjuntoRadio">
+	                    <label>Si</label>
+	                    <input type="radio" name="bebe" class="hoja-si" value="1" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>No</label>
+	                    <input type="radio" name="bebe" class="hoja-si" value="0" />
+	                </div>
+	            </div>
+	        </div>
+	        <div class="subtituloHojaClinicaRadio">
+	            <label class="subtitulo">¿Ingiere drogas?</label>
+	            <div class="contRadio">
+	                <div class="conjuntoRadio">
+	                    <label>Si</label>
+	                    <input type="radio" name="drogas" class="hoja-si" value="1" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>No</label>
+	                    <input type="radio" name="drogas" class="hoja-si" value="0" />
+	                </div>
+	            </div>
+	        </div>
+	        <div class="subtituloHojaClinicaRadio">
+	            <label class="subtitulo">¿Como considera su calidad de sueño?</label>
+	            <div class="contRadio">
+	                <div class="conjuntoRadio">
+	                    <label>Buena</label>
+	                    <input type="radio" name="sueno" class="hoja-si" value="3" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>Regular</label>
+	                    <input type="radio" name="sueno" class="hoja-si" value="2" />
+	                </div>
+	                <div class="conjuntoRadio">
+	                    <label>Mala</label>
+	                    <input type="radio" name="sueno" class="hoja-si" value="1" />
+	                </div>
+	            </div>
+	        </div>
+	
+	        <input class="btn" type="button" name="guardarAlimentacion" value="Guardar Datos" id="guardarAlimentacion"
+	            onclick="agregarAlimentacion()" />
+	    	</form>
+    </div>
+</body>
+
+</html>

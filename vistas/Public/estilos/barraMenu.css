@@ -1,0 +1,104 @@
+:root {
+    --backgroundW: #ffffff;
+    --backgroundB: #000000;
+    --colorW: #ffffff;
+    --colorB: #000000;
+
+    --colorTextoHover: rgba(255, 255, 255, 0.8);
+
+    --colorPrincipal: #E8204F;
+    /*Hover Colors*/
+    --colorSecundario: #009C17;
+    /*Ancho de los menus*/
+    --widthHeader: 1000px;
+
+}
+
+.contenedorBarraPrincipal{
+	font-family: 'indie_flowerregular';
+	position: relative;
+	height: 80px;
+	width: auto;
+	padding: 5px 10px 5px 10px;
+	background-color: rgb(255, 47, 92);
+}
+.texto{
+    position: relative;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+.logoPagina{
+	padding-top: 7px;
+	padding-bottom: 7px;
+	width: 64px;
+	height: 64px;
+	position: absolute;
+	margin-top: 0px;
+	margin-left: 0px;	
+}
+#iconoPrincipal{
+	position: relative;
+	width: 64px;
+}
+
+
+.menuPrincipal{
+	width: 455px;
+	height: 30px;
+	position: absolute;
+	/*margin-top: -80px;*/
+	margin-left: 85px;
+	padding: 29px 1px 21px 10px;
+}
+#contacto{
+	width: 100px;
+	margin-left: 0px;
+	position: absolute;
+}
+#productos{
+	width: 120px;
+	margin-left: 125px;
+	position: absolute;
+}
+#servicios{
+	width: 100px;
+	margin-left: 240px;
+	position: absolute;
+}
+#cita{
+	width: 120px;
+	margin-left: 345px;
+	position: absolute;
+}
+
+
+.logoFacebook{
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	margin-top: 23px;
+	margin-left: 578px;
+}
+
+
+.menuRegistro{
+	width: 230px;
+	height: 30px;
+	position: absolute;
+	/*margin-top: -57px;*/
+	margin-left: 640px;
+	padding: 30px 0px 18px 0px;
+}
+#inicioSesion{
+	margin-left: 10px;
+	width: 100px;
+	position: absolute;
+}
+#registrarse{
+	width: 100px;
+	/*margin-top: -46px;*/
+	margin-left: 130px;
+	position: absolute;
+}

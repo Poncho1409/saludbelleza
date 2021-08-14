@@ -1,0 +1,303 @@
+/*#image {
+    width: 100%;
+    height: 450px;
+    position: absolute;
+}
+
+.container--image {
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 570px;
+    top: 210px;
+}
+
+.image {
+    position: relative;
+    width: 1000px;
+    height: 450px;
+    background: url("../../Assets/imagenes/img4.jpg");
+    background-position: bottom;
+    background-size: cover;
+    box-shadow:
+        0px 50px 70px rgba(0, 0, 0, 0.3),
+        0px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.image::after {
+    content: "";
+    background-image: inherit;
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    bottom: -26%;
+    transform: scaleY(-1);
+    background-position: bottom;
+    background-size: cover;
+    opacity: 0.5;
+}
+
+.image::before {
+    content: "";
+    width: 100%;
+    height: 27%;
+    position: absolute;
+    bottom: -27%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #ffffff);
+    z-index: 1;
+}*/
+
+:root {
+    --backgroundW: #ffffff;
+    --backgroundB: #000000;
+    --colorW: #ffffff;
+    --colorB: #000000;
+
+    --colorTextoHover: rgba(255, 255, 255, 0.8);
+
+    --colorPrincipal: #E8204F;
+    /*Hover Colors*/
+    --colorSecundario: #009C17;
+    /*Ancho de los menus*/
+    --widthHeader: 1000px;
+
+}
+
+.presentacionServicios {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../Assets/imagenes/fondoSpa3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+/*         Typed         */
+
+.tituloPresentacion,
+.typed {
+    color: black;
+    margin: 1em;
+}
+
+.escribir{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    position: relative;
+    font-size: 3em;
+}
+
+.escribir::after{
+    color: black;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1px;
+    height: 2%;
+    right: 10px;
+    border-right: solid 2px black;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*       -----------      */
+
+
+/*         Typed 2         */
+
+.tituloPresentacion,
+.typed2 {
+    color: black;
+    margin: 1em;
+}
+
+.escribir2{
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.1));
+    position: relative;
+    font-size: 3em;
+}
+
+.escribir2::after{
+    color: black;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1px;
+    height: 2%;
+    right: 10px;
+    border-right: solid 2px black;
+    animation: blinks 0.5s infinite ease;
+}
+
+@keyframes blinks{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*       -----------      */
+
+
+.presentacionProductos {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../Assets/imagenes/fondoSpa4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: auto;
+}
+
+.parallax-servicios {
+    background-image: url(../../Assets/imagenes/dark_wood.png);
+    background-size: 50%;
+    background-position: left;
+    background-repeat: repeat-y;
+}
+
+.parallax-productos {
+    background-image: url(../../Assets/imagenes/wood_pattern.png);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: repeat-y;
+}
+
+section {
+    background: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.parallax-productos,
+.parallax-servicios {
+    /*about*/
+    height: 300vh;
+    display: flex;
+}
+
+.productosTitulo,
+.serviciosTitulo{
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2));
+}
+
+.productosTitulo,
+.serviciosTitulo {
+    /*about-title*/
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0 !important;
+    position: relative;
+}
+
+.productos-pages,
+.servicios-pages {
+    /*about-pages*/
+    width: 50%;
+    position: relative;
+}
+
+.productos-pages div>p,
+.servicios-pages div>p {
+    width: 80%;
+    line-height: 30px;
+}
+
+#servicio1,
+#producto1 {
+    background-color: #1b804e;
+}
+
+#servicio2,
+#producto2 {
+    background-color: #421b80;
+}
+
+#servicio3,
+#producto3 {
+    background-color: #801b1b;
+}
+
+footer {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+.servicio {
+    /*la parte verde*/
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    padding: 1em;
+    background: #1b804e;
+    height: 100vh;
+
+}
+
+.servicio div,
+.servicio h2 {
+    color: black;
+}
+
+.cont-servicio {
+    /*div que contiene lo de verde*/
+    width: 100%;
+    position: relative;
+}
+
+.titulo-servicio h2 {
+    /*titulo de cada servicio/producto*/
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+}
+
+.imagenServicio img {
+    /*contiene la imagen*/
+    width: 100%;
+}
+
+.descripcion {
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,271 @@
+:root {
+    --backgroundW: #ffffff;
+    --backgroundB: #000000;
+    --colorW: #ffffff;
+    --colorB: #000000;
+
+    --colorTextoHover: rgba(255, 255, 255, 0.8);
+
+    --colorPrincipal: #E8204F;
+    /*Hover Colors*/
+    --colorSecundario: #009C17;
+    /*Ancho de los menus*/
+    --widthHeader: 1000px;
+
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.contacto img{
+    width: 24px;    
+}
+
+#iconoCarrito{
+    width: 32px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+}
+
+.presentacionProductos {
+	height: 30vh;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+.presentacionProductos div {
+	width: 80%;
+}
+
+.presentacionProductos h2 {
+	margin-bottom: 1em;
+}
+
+.seccionProductos {
+	background-color: black;
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url(../../Assets/imagenes/checkerboard-cross.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.product {
+	width: 1000px;
+	/*height: 350px;*/
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 1em;
+    margin: 3em 0;
+    display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.product .imgbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 2em;
+}
+
+.product .imgbox img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.details {
+	width: 100%;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	transition: 0.5s;
+}
+
+.details div {
+    display: block;
+    margin: 1em 0;
+}
+
+.details h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	width: 100%;
+}
+
+.details span{
+    color: #444444;
+}
+
+.details .price {
+	font-weight: bold;
+	color: #444444;
+	font-size: 20px;
+}
+
+.details a {
+	display: block;
+	padding: 5px;
+	color: rgb(255, 255, 255);
+	margin: 15px 0 0;
+	background: #000000;
+	text-decoration: none;
+	text-align: center;
+	transition: 0.3s;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.details a:hover {
+	background: #383838;
+}
+
+
+
+
+/*			Agregar productos			*/
+
+.seccionVer,
+.seccionAgregar{
+	background-color: antiquewhite;
+	width: 100%;
+	padding: 20px 0;
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url(../../Assets/imagenes/checkerboard-cross.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.divAgregar{
+	width: 80%;
+	max-width: 1000px;
+	padding: 30px 40px;
+	background-color: snow;
+	box-sizing: border-box;
+	border-radius: 8px;
+	text-align: center;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+/*			Formulario para agregar productos			*/
+
+.seccionVer h1{
+	margin-bottom: 20px;
+}
+
+.seccionVer h1,
+.divAgregar h1 {
+	margin-top: 0;
+	font-weight: 200;
+	font-size: 24px;
+}
+.conjuntoRadio {
+	display: inline;
+	margin: 0 1em;
+}
+.conjuntoRadio input {
+	margin: 0 0.2em;
+}
+.contRadio{
+	margin: 10px 0 0 0;
+	padding: 8px 18px;
+}
+.subtituloHojaClinicaRadio,
+.txtb {
+	border-bottom: 1px solid gray;
+	margin-bottom: 2.5em;
+	padding: 5px 18px;
+}
+.contRadio{
+	color: #333;
+}
+.subtitulo,
+.txtb label{
+	display: block;
+	text-align: left;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+.txtb input,
+.txtb textarea{
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	color: #333;
+	font-size: 14px;
+	margin-top: 6px;
+}
+.btn{
+	display: block;
+	background: #000000;
+	color: white;
+	padding: 14px 0;
+	text-transform: uppercase;
+	cursor: pointer;
+	margin-top: 8px;
+	width: 100%;
+	border: none;
+	border-radius: 8px;
+}
+
+
+/*				Tabla para ver los productos			*/
+.cont-table{
+	border-collapse: collapse;
+	margin: 2em 0;
+	font-size: 0.9em;
+	width: 80%;
+	max-width: 1000px;
+	border-radius: 5px 5px 0 0;
+	overflow: hidden;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.cont-table thead tr{
+	background-color: #000000;
+	color: white;
+	text-align: left;
+	font-weight: 600;
+}
+
+.cont-table th,
+.cont-table td{
+	padding:  12px 15px;
+}
+
+.cont-table tbody tr a{
+	color: #000000;
+}
+
+.cont-table tbody tr{
+border-bottom: solid 1px gray;
+}
+
+.cont-table tbody tr:nth-child(even){
+	background-color: #dadada;
+	color: rgb(0, 0, 0);
+}
+
+.cont-table tbody tr:last-of-type{
+	border-bottom: solid 2px #000000;
+}

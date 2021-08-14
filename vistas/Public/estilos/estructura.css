@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/*
+Modo nocturno
+body{
+	background-color: #1f1f1f;
+	color: #727272;
+}
+div{
+	border: solid 1px #000000;
+}
+*/
+
+:root {
+    --backgroundW: #ffffff;
+    --backgroundB: #000000;
+    --colorW: #ffffff;
+    --colorB: #000000;
+
+    --colorTextoHover: rgba(255, 255, 255, 0.8);
+
+    --colorPrincipal: #E8204F;
+    /*Hover Colors*/
+    --colorSecundario: #009C17;
+    /*Ancho de los menus*/
+    --widthHeader: 1000px;
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.contacto img{
+    width: 24px;    
+}
+
+#iconoCarrito{
+    width: 32px;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container--main {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+}
+
+
+
+/* Barra de servicios */
+.barraServicios {
+	width: 619px;
+	height: 40px;
+	position: relative;
+	left: 130px;
+}
+
+.barraPestanas {
+	width: 615px;
+	height: 40px;
+	position: relative;
+	left: 140px;
+}
+
+.pestana {
+	position: absolute;
+	height: 20px;
+	/*width: 70px;*/
+	padding: 10px 24px 10px 24px;
+	margin-top: 0px;
+}
+
+.textoPestana {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: 20px;
+	width: 70px;
+}
+
+.pestana1de5 {
+	left: 0px;
+	position: absolute;
+}
+
+.pestana2de5 {
+	margin-left: 124px;
+	position: absolute;
+}
+
+.pestana3de5 {
+	margin-left: 247px;
+	position: absolute;
+}
+
+.pestana4de5 {
+	margin-left: 370px;
+	position: absolute;
+}
+
+.pestana5de5 {
+	margin-left: 494px;
+	position: absolute;
+}
+
+/**/
+
+
+/*Banner de los productos y servicios*/
+.contenedorSeccion {
+	position: relative;
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 30px 10px 30px 10px;
+	width: 880px;
+}
+
+#descripcionProductos {
+	margin-bottom: 10px;
+}
+
+/**/
+
+/*Productos*/
+.contenedorTarjetas {
+	/*width: 848px;*/
+	width: 860px;
+	height: 320px;
+	position: relative;
+	padding: 5px 20px 5px 20px;
+}
+
+.tarjetaContenedor {
+	width: 200px;
+	position: absolute;
+	padding: 5px 12px 5px 12px;
+}
+
+.margenTarjeta {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.imagenTarjeta {
+	position: relative;
+	height: 150px;
+	width: 150px;
+}
+
+.descripcionTarjeta {
+	position: relative;
+	height: 60px;
+	width: 150px;
+}
+
+.precioTarjeta {
+	position: relative;
+	height: 30px;
+	width: 150px;
+}
+
+.tarjeta1de4 {
+	margin-left: -20px;
+	position: absolute;
+}
+
+.tarjeta2de4 {
+	/*margin-left: 225px;*/
+	margin-left: 205px;
+	position: absolute;
+}
+
+.tarjeta3de4 {
+	/*margin-left: 450px;*/
+	margin-left: 430px;
+	position: absolute;
+}
+
+.tarjeta4de4 {
+	/*margin-left: 675px;*/
+	margin-left: 655px;
+	position: absolute;
+}
+
+/**/
+
+.textoProductos {
+	position: relative;
+	margin-top: auto;
+	margin-bottom: auto;
+	text-align: justify;
+}
+
+.contenedorMedio {
+	width: 600px;
+	height: 200px;
+	position: relative;
+	left: 150px;
+}
+
+/*Pie de pagina*/
+.barraFinal {
+	font-family: 'indie_flowerregular';
+	position: relative;
+	height: 80px;
+	width: auto;
+	padding: 5px 10px 5px 10px;
+	background-color: rgb(255, 47, 92);
+}
+
+.contenedorFinal {
+	width: 225px;
+	height: 75px;
+	position: absolute;
+	top: 6px;
+}
+
+.columna1de3 {
+	left: 57px;
+}
+
+.columna2de3 {
+	left: 332px;
+}
+
+.columna3de3 {
+	right: 57px;
+}
+
+/**/
+
+
+.tituloPagina {
+	position: absolute;
+	height: 70px;
+	width: 600px;
+	left: 150px;
+}
+
+.cuadroSesion {
+	height: 350px;
+	width: 350px;
+	position: absolute;
+	left: 275px;
+}
+
+.inputCadena {
+	width: 200px;
+	height: 100px;
+	position: absolute;
+	left: 75px;
+}
+
+.boton {
+	width: 200px;
+	height: 60px;
+	position: absolute;
+	left: 75px;
+	top: 260px;
+}
+
+#productos {
+	width: 100%;
+}

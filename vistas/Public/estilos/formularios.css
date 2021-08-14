@@ -1,0 +1,293 @@
+:root {
+    --backgroundW: #ffffff;
+    --backgroundB: #000000;
+    --colorW: #ffffff;
+    --colorB: #000000;
+
+    --colorTextoHover: rgba(255, 255, 255, 0.8);
+
+    --colorPrincipal: #E8204F;
+    /*Hover Colors*/
+    --colorSecundario: #009C17;
+    /*Ancho de los menus*/
+    --widthHeader: 1000px;
+
+}
+
+h2 {
+	color: white;
+}
+
+/*			Contactanos			*/
+.contacto-form {
+	height: 100%;
+	position: relative;
+}
+
+.contacto-form form {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+}
+
+.textareaContacto {
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.textareaContacto textarea {
+	height: 200px;
+}
+
+.datos {
+	display: flex;
+	flex-direction: column;
+	font-size: 0.85em;
+}
+
+.datos span:nth-child(2) {
+	margin-bottom: 30px;
+}
+
+/*******************************/
+
+/*Checkbox*/
+.categoriaCheckbox {
+	display: none;
+}
+
+.categoriaCheckbox:checked+.categoriaLabel {
+	text-decoration: underline;
+	color: bisque;
+}
+/*******/
+
+
+
+
+/*			Categoria hoja clinica		header	*/
+
+.cont-form{
+	font-family: 'Montserrat', sans-serif;
+}
+.cont-form form{
+	width: fit-content;
+	margin: auto;
+}
+.tituloCategoriaHojaClinica{
+	color: black;
+	text-align: center;
+	margin-top: 0;
+}
+.subtituloHojaClinica{
+	display: flex;
+	margin: 0 0 1em 0;
+}
+.subtituloHojaClinica input{
+	width: 40px;
+	margin-left: 3em;
+}
+.subtituloHojaClinicaRadio,
+.subtituloHojaClinica,
+.tituloCategoriaHojaClinica{
+	border: solid 1px black;
+}
+.conjuntoRadio{
+	display: inline;
+	margin-right: 3em;
+}
+.subtituloRadios{
+	margin: 1.5em 0 0.5em 0;
+}
+
+.button{
+	margin-top: 20px;
+}
+
+/*		***********		*/
+
+
+
+
+
+/*			Sesion/Registro			*/
+.container--form {
+	width: 70%;
+	max-width: 900px;
+	background: white;
+	background: radial-gradient(circle, #494949, #535353, #505050, #4e4e4e, #4c4c4c);
+	box-shadow:
+		/*bottom shadow*/
+		0px 20px 20px rgba(0, 0, 0, 0.2),
+		/*long bottom shadow*/
+		0px 10px 10px rgba(0, 0, 0, 0.4),
+		/*right shadow*/
+		30px 50px 50px rgba(0, 0, 0, 0.2),
+		/*left shadow*/
+		-30px 50px 50px rgba(0, 0, 0, 0.2),
+		/*right inset*/
+		inset 20px 0px 60px rgba(0, 0, 0, 0.1),
+		/*left inset*/
+		inset -20px 0px 60px rgba(0, 0, 0, 0.1);
+	position: relative;
+	margin: 40px auto;
+	border-radius: 10px;
+	opacity: 0.8;
+	color: black;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	filter: blur(0.4px);
+	padding: 30px 40px;
+	text-align: center;
+}
+
+.sino label {
+	margin-right: 20px;
+}
+
+.sino {
+	text-align: left;
+}
+
+.opcion {
+	width: 100%;
+	text-align: left;
+	margin: 8px 0;
+	padding: 12px 18px;
+}
+
+.titulo {
+	margin-right: 50%;
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+#titulo-servicio {
+	font-size: 18px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+
+.input {
+	border-bottom: 1px #ffffff solid;
+	margin: 8px 0;
+	padding: 12px 18px;
+}
+
+.input label {
+	font-size: 14px;
+}
+
+textarea {
+	width: 100%;
+	border: none;
+	background: white;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.input input {
+	width: 100%;
+	border: none;
+	background: none;
+	outline: none;
+	font-size: 18px;
+	margin-top: 6px;
+}
+
+.button-hojaClinica {
+	border: none;
+	text-align: left;
+	margin-top: 15px;
+	transform: scale(1, 0);
+	transition: transform 400ms ease-in-out;
+}
+
+.hoja-si:checked~.button-hojaClinica {
+	transform: scale(1, 1);
+}
+
+.button {
+	margin: 0;
+	padding: 9px 25px;
+	background-color: white;
+	color: black;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+input[type="submit"] {
+	padding: 12px 25px;
+	background-color: black;
+	color: white;
+	border: none;
+	border-radius: 40px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 18px;
+	margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+	background-color: black;
+}
+
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	opacity: 1;
+	/* Firefox */
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: white;
+	font-size: 20px;
+	font-weight: 300;
+}
+
+.inputBox {
+	position: relative;
+}
+
+.inputBox input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid white;
+	outline: none;
+	background: transparent;
+}
+
+.inputBox label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: white;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.inputBox input:focus~label,
+.inputBox input:valid~label {
+	top: -20px;
+	left: 0;
+	color: black;
+	font-size: 12px;
+}

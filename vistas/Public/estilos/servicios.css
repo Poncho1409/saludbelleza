@@ -1,0 +1,111 @@
+:root {
+    --backgroundW: #ffffff;
+    --backgroundB: #000000;
+    --colorW: #ffffff;
+    --colorB: #000000;
+
+    --colorTextoHover: rgba(255, 255, 255, 0.8);
+
+    --colorPrincipal: #E8204F;
+    /*Hover Colors*/
+    --colorSecundario: #009C17;
+    /*Ancho de los menus*/
+    --widthHeader: 1000px;
+
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.presentacionProductos {
+	height: 30vh;
+	width: 100%;
+	margin-top: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.presentacionProductos div{
+	width: 80%;
+}
+.presentacionProductos h2{
+	margin-bottom: 1em;
+}
+
+.seccionProductos {
+	background-color: black;
+	width: 100%;
+	padding: 20px 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	background-image: url(../../Assets/imagenes/checkerboard-cross.png);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.product {
+	width: 400px;
+	/*height: 350px;*/
+	background: #ffffff;
+	border-radius: 8px;
+	padding: 1em;
+	margin: 0 3em;
+}
+
+.product .imgbox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1em;
+}
+
+.product .imgbox img {
+	width: 100%;
+	border-radius: 4px;
+}
+
+.details {
+	width: 100%;
+	box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+	transition: 0.5s;
+}
+
+.price{
+	display: block;
+	margin-top: 1em;
+}
+
+.details h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	width: 100%;
+}
+
+.details .price {
+	font-weight: bold;
+	color: #444444;
+	font-size: 20px;
+}
+
+.details a {
+	display: block;
+	padding: 5px;
+	color: rgb(255, 255, 255);
+	margin: 15px 0 0;
+	background: #000000;
+	text-decoration: none;
+	text-align: center;
+	transition: 0.3s;
+	cursor: pointer;
+	border-radius: 4px;
+}
+
+.details a:hover {
+	background: #383838;
+}

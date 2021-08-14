@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'indie_flowerregular';
+    src: url('../../Assets/fuentes/Indie_Flower/indieflower-regular-webfont.woff2') format('woff2'),
+         url('../../Assets/fuentes/Indie_Flower/indieflower-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('../../Assets/fuentes/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'julius_sans_oneregular';
+    src: url('../../Assets/fuentes/juliussansone-regular-webfont.woff2') format('woff2'),
+         url('../../Assets/fuentes/juliussansone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

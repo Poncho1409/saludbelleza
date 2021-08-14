@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./Public/estilos/formularios-hojaClinica.css">
+    <title>Salud y Belleza</title>
+    <script type="text/javascript" src="./Public/scripts/formularioHoja.js"></script>
+</head>
+
+<body>
+
+    <div class="contact-form">
+        <h1>Datos generales</h1>
+        <form name="datosGenerales" id="datosGenerales" action="" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+            <div class="txtb">
+                <label for="">Peso (Kg)</label>
+                <input type="number" name="peso" class="hoja-si" />
+            </div>
+
+            <div class="txtb">
+                <label for="">Estatura (m)</label>
+                <input type="number" name="estatura" class="hoja-si" />
+            </div>
+
+            <div class="txtb">
+                <label for="">Mensaje</label>
+                <textarea name="motivoCita" id="motivoCita" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="subtituloHojaClinicaRadio">
+                <label for="" class="subtitulo">Sexo</label>
+
+                <div class="contRadio">
+                    <div class="conjuntoRadio">
+                        <label class="labelRadio" for="">Masulino</label>
+                        <input class="inputRadio" type="radio" name="sexo" class="hoja-si" value="m" />
+                    </div>
+
+
+                    <div class="conjuntoRadio">
+                        <label class="labelRadio" for="">Femenino</label>
+                        <input class="inputRadio" type="radio" name="sexo" class="hoja-si" value="f" />
+                    </div>
+                </div>
+            </div>
+            <input class="btn" type="button" name="guardarGenerales" value="Guardar Datos" id="guardarGenerales"
+                onclick="agregarDatosGenerales()" />
+
+        </form>
+    </div>
+</body>
+
+</html>
